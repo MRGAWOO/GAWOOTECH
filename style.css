@@ -1,8 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0;
-    margin: 0: auto
-    text-decoration:none;
+    margin: 0 auto;
+    text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 15px 60px;             
+  background-color: #85c9d6
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 40px; /* space between menu items */
+}
+
+.nav-menu a {
+  color: #222;               /* text color */
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s ease;     /* smooth animation */
+}
+
+.nav-menu a:hover {
+  color: #007bff;            /* blue on hover */
+}
+.logo-header img {
+  height: 50px;   /* adjust the size */
+  width: auto;
+}
+.nav-menu a {
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-menu a{
+    color: rgb(9, 41, 185);
+    position: relative;
+    text-decoration:none;
+}
+
+.nav-menu a:after{
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover:after{
+    width: 100%;
 }
