@@ -60,3 +60,12 @@
 .nav-menu a:hover:after{
     width: 100%;
 }
+
+.home-section {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:20px, 60px;
+  min-height: 100vh;
+  background-color: #c1ef19
+}
